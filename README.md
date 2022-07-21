@@ -1,13 +1,14 @@
 # json2excel
-前端json导出excel表格
+前端  json导出excel表格
 
-//安装依赖
-npm i -S file-saver
-npm i -S xlsx
-//引入组件
-import toExcel from '@/excel/json2excel'
-Vue.prototype.$toExcel = toExcel
-//使用
+### 安装依赖
+npm i -S file-saver  
+npm i -S xlsx  
+### 引入组件
+import toExcel from '@/excel/json2excel'  
+Vue.prototype.$toExcel = toExcel  
+### 使用
+```
 data() {
     return {
       excelData: [
@@ -35,3 +36,4 @@ data() {
       this.$toExcel({th, data, fileName, fileType, sheetName})
     }
   }
+```
